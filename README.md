@@ -1,2 +1,2 @@
 # SQLCheckDigitCalc
-Calculate Check Digits for UPC-A codes
+Calculate Check Digits for UPC-A codes using SQLServer
