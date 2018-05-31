@@ -66,16 +66,17 @@ SELECT * FROM TABLE_A
 SELECT * FROM TABLE_B
 
 /* The first digit in a UPC-A denotes the product type */
-/* To search UPC's by product type change the digit before the % to reflect the product type you're searching for */
+/* To search UPC's by product type change the digit before the % to reflect the product type you're searching for from the list below */
 /* 
-0:      Standard UPC number
-1:      Reserved
-2:      Random weight items (fruits, meat, vegetables, etc.
-3:      Pharmaceuticals
-4:      In store marketing for retailers (a store can set up unique barcodes for themselves, but no other store will be able to read them)
-5:      Coupons
-6, 7,8   Standard UPC number
-9:      Reserved */
+0------Standard UPC number
+1------Reserved
+2------Random weight items (fruits, meat, vegetables, etc.
+3------Pharmaceuticals
+4------In store marketing for retailers (a store can set up unique barcodes for themselves, but no other store will be able to read them)
+5------Coupons
+6, 7,8-Standard UPC number
+9------Reserved 
+*/
 
 SELECT * FROM TABLE_B
 WHERE UPC_WITH_CHECK_DIGIT LIKE '1%'
